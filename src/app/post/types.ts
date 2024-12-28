@@ -19,3 +19,10 @@ export interface PostProps {
   location: string;
   locationLink: string;
 }
+export interface ProfileProps {
+  src: string;
+  username: string;
+  userLink: string;
+  location: string;
+  locationLink: string;
+}

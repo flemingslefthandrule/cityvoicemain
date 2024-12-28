@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import React, { useState } from "react";
 import Comment from "./Comment";
 import { PostProps } from "./types";
+import Profile from "./profile";
 
 function Post({
   src,
@@ -21,25 +21,13 @@ function Post({
   const [showComments, setShowComments] = useState(false);
   return (
     <div className="flex flex-col items-center gap-2 justify-center w-[30vw] p-4 mx-auto bg-[#EEF7FF] text-[#000000] aspect-video rounded-xl">
-      <div className="flex  w-full">
-        <Image
-          className="aspect-square rounded-full w-7 h-7 cursor-pointer "
-          src={src ? src : "https://via.placeholder.com/50"}
-          height={500}
-          width={500}
-          alt="profilePicture"
-        />
-        <div className="flex flex-col pl-2">
-          <Link href={userLink}>
-            <h4 className="text-[0.7rem] font-bold"> {username}</h4>
-          </Link>
-          <Link href={locationLink}>
-            <h4 className="text-[0.55rem] font-normal text-[rgba(0,0,0,0.5)]">
-              {location}
-            </h4>
-          </Link>
-        </div>
-      </div>
+      <Profile
+        src={src}
+        username={username}
+        userLink={userLink}
+        location={location}
+        locationLink={locationLink}
+      />
       <h1 className="w-full flex justify-start text-sm">{postTitle}</h1>
       {postImage && (
         <Image
