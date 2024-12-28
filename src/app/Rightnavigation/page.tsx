@@ -13,7 +13,7 @@ function Navigation() {
         <NavLinks name="Profile" />
       </div>
       <div className="flex flex-col gap-5 text-sm h-[30%] ">
-        <h1 className="text-xl font-medium">My Following</h1>
+        <h1 className="text-xl font-medium text-[#4D869C]">My Following</h1>
         <Profile
           src="https://via.placeholder.com/150" // Placeholder image URL
           username="Placeholder Username" // Placeholder username
