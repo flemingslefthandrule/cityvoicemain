@@ -3,7 +3,7 @@ import Question from "./question";
 
 function LeftNavigation() {
   return (
-    <div className="h-screen border-[#9E9E9E] border flex flex-col bg-[#EEF7FF] text-[#000000] m-auto w-fit rounded-xl p-5 ">
+    <div className="h-screen border-[#9E9E9E] border flex flex-col bg-[#EEF7FF] text-[#000000] m-auto w-[18vw] rounded-xl p-5 shadow-xl ">
       <div className="flex flex-col gap-5 h-[64%] overflow-y-auto">
         <h1 className="text-xl font-medium text-[#4D869C]">
           Most Asked Questions !

@@ -4,7 +4,7 @@ import Profile from "../post/profile";
 
 function Navigation() {
   return (
-    <div className="h-screen border-[#9E9E9E] border flex flex-col bg-[#EEF7FF] text-[#000000] m-auto w-[15vw] rounded-xl p-5 ">
+    <div className="h-screen border-[#9E9E9E] border flex flex-col bg-[#EEF7FF] text-[#000000] m-auto w-[18vw] rounded-xl p-5  shadow-xl">
       <div className="flex flex-col text-lg h-[50%] w-full  font-bold gap-8  ">
         <NavLinks name="Home" />
         <NavLinks name="Local Feed" />

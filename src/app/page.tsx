@@ -2,12 +2,14 @@ import React from "react";
 import Post from "./post/page";
 import RightNavigation from "./Rightnavigation/page";
 import LeftNavigation from "./leftNavigation/page";
+import CreatePost from "./createPost/page";
 export default function Home() {
   return (
     <div className="w-screen bg-[#F0F2F5]">
       <div className="w-fit flex mx-auto gap-1 ">
         <RightNavigation />{" "}
-        <div>
+        <div className="flex flex-col gap-1">
+          <CreatePost />
           <Post
             src="https://via.placeholder.com/50"
             username="John Doe"

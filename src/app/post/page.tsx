@@ -20,7 +20,7 @@ function Post({
 }: PostProps) {
   const [showComments, setShowComments] = useState(false);
   return (
-    <div className="flex flex-col items-center gap-2 justify-center w-[30vw] p-4 mx-auto bg-[#EEF7FF] text-[#000000] aspect-video rounded-xl">
+    <div className="flex flex-col items-center gap-2 justify-center w-[30vw] p-4 mx-auto bg-[#EEF7FF] text-[#000000] aspect-video rounded-xl border-[#9E9E9E] border shadow-xl">
       <Profile
         src={src}
         username={username}
