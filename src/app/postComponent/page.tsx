@@ -6,17 +6,17 @@ import { PostProps } from "./types";
 import Profile from "./profile";
 
 function Post({
-  src,
-  username,
-  userLink,
-  postTitle,
+  src = "https://via.placeholder.com/50",
+  username = "Unknown",
+  userLink = "#",
+  postTitle = "Untitled",
   postImage,
-  upvotes,
-  downvotes,
-  comments,
-  postLink,
-  location,
-  locationLink,
+  upvotes = 0,
+  downvotes = 0,
+  comments = [],
+  postLink = "#",
+  location = "Unknown",
+  locationLink = "#",
 }: PostProps) {
   const [showComments, setShowComments] = useState(false);
   return (
@@ -183,7 +183,7 @@ function Post({
             setShowComments(true);
           }}
         >
-          Show {comments.length} Comments
+          Show {comments?.length} Comments
         </div>
       )}
     </div>

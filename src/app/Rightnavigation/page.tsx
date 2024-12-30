@@ -1,6 +1,6 @@
 import React from "react";
 import NavLinks from "./navLinks";
-import Profile from "../post/profile";
+import Profile from "../postComponent/profile";
 
 function Navigation() {
   return (
