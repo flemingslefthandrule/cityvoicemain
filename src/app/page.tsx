@@ -3,9 +3,11 @@ import Post from "./postComponent/page";
 import RightNavigation from "./Rightnavigation/page";
 import LeftNavigation from "./leftNavigation/page";
 import CreatePost from "./createPost/page";
+import NavBar from "./navBar/page";
 export default function Home() {
   return (
-    <div className="w-screen bg-[#F0F2F5]">
+    <div className="w-screen bg-[#F0F2F5] gap-1 flex flex-col ">
+      <NavBar />
       <div className="w-fit flex mx-auto gap-1 ">
         <RightNavigation />{" "}
         <div className="flex flex-col gap-1">
