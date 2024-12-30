@@ -1,5 +1,5 @@
 import React from "react";
-import Post from "./post/page";
+import Post from "./postComponent/page";
 import RightNavigation from "./Rightnavigation/page";
 import LeftNavigation from "./leftNavigation/page";
 import CreatePost from "./createPost/page";
